@@ -1,0 +1,92 @@
+@import './../../styles/main.scss';
+
+.workspace-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(6, 95, 157);
+
+}
+
+.workspace-header-div-left {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    align-items: center;
+    &>* {
+    margin: 0 10px;
+    padding: 0 10px;
+    }
+}
+
+.workspace-header-div-right {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    align-items: center;
+    &>* {
+    margin: 0 3px;
+    }
+
+    &>p {
+        background-color: blue;
+        height: 35px;
+        width: 35px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+}
+
+.button-4 {
+    height: 35px;
+    border-radius: 3px;
+    &:hover {
+        background-color: rgb(81, 143, 187);
+        transition: all .2s;
+    }
+}
+
+input {
+    background-color: rgb(81, 143, 187);
+    color: white;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+    width: 250px;
+
+    &::placeholder {
+        color: white;
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &:focus {
+        background-color: white;
+        color: $color-blue-background;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.workspace-info-icon {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.workspace-bell-icon {
+    height: 25px;
+    width: 25px;
+    background-color: aquamarine;
+    border-radius: 3px;
+}

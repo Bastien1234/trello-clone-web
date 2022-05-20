@@ -1,0 +1,105 @@
+@import './../../styles/main.scss';
+
+.top-section {
+    background: linear-gradient(to bottom, rgb(231, 226, 255), white);
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &>* {
+        margin: 10px 10px;
+    }
+}
+
+.button-1 {
+    background-color: transparent;
+    color: $color-blue-background;
+    width: 125px;
+    height: 37px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.button-2 {
+    background-color: $color-blue-background;
+    color: white;
+    width: 125px;
+    height: 37px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 10px;
+
+    &:hover {
+        background-color: $color-blue-background-hover;
+        transition: all .3s;
+    }
+
+}
+
+.button-3 {
+    border: 1px solid $color-blue-background;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: $color-blue-background;
+    margin-top: 25px;
+    &:hover {
+        background-color: $color-blue-background;
+        color: white;
+        transition: all .2s
+    }
+}
+
+.section-1-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+
+}
+
+.section-subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.board-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.board-image {
+    height: auto;
+    width: auto;
+    // max-width: 100%;
+    max-width: 1100px;
+}
