@@ -1,5 +1,9 @@
 @import './../../styles/main.scss';
 
+.workspace-main-container {
+    height: 100vh;
+}
+
 .workspace-header {
     display: flex;
     flex-direction: row;
@@ -12,7 +16,7 @@
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     height: 45px;
     align-items: center;
     &>* {
@@ -25,7 +29,7 @@
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     height: 45px;
     align-items: center;
     &>* {
@@ -34,9 +38,9 @@
 
     &>p {
         background-color: blue;
-        height: 35px;
-        width: 35px;
-        border-radius: 18px;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -77,16 +81,107 @@ input {
 }
 
 .workspace-info-icon {
-    height: 25px;
-    width: 25px;
+    height: 17px;
+    width: 17px;
     background-color: white;
     border-radius: 15px;
 
 }
 
 .workspace-bell-icon {
-    height: 25px;
-    width: 25px;
+    height: 17px;
+    width: 17px;
     background-color: aquamarine;
     border-radius: 3px;
+}
+
+.home-container-main {
+    // padding-top: 30px;
+    background-color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-top: 35px;
+
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    // border: 1px solid black;
+    // width: 1000px;
+}
+
+.home-container-left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 150px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.home-container-right {
+    display: flex;
+    flex-direction: column;
+    // flex: 3;
+    // background-color: rgb(143, 143, 181);
+    width: 60vw;
+    margin-left: 1rem;
+
+    &>h1 {
+        font-size: 1rem;
+        color: darkgrey;
+        margin-left: 1rem;
+    }
+}
+
+.left-side-button {
+    cursor: pointer;
+    height: 25px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+
+    &:hover {
+        background-color: lightblue;
+        color: rgb(32, 32, 172);
+        transition: all .45s;
+    }
+
+    &-img {
+        height: 10px;
+        width: 10px;
+        margin-right: 8px;
+    }
+
+    &>p {
+        font-size: .75rem;
+    }
+}
+
+.create-button {
+    background-color: rgb(206, 201, 201);
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(182, 179, 179);
+        transition: all .1s
+    }
+
+    &>p {
+        font-size: .75rem;
+        font-weight: 400;
+    }
 }
