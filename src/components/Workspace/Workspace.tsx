@@ -7,6 +7,8 @@ import tableaux from './../../assets/svg/tableaux.png';
 import settings from './../../assets/svg/settings.png';
 import accueil from './../../assets/svg/accueil.png';
 import help from './../../assets/svg/help.png';
+import cross from './../../assets/svg/cancel.png';
+import workspaceScreenshot from './../../assets/images/workspace.png';
 
 const testDB = ["Foot", "Hokey"]
 
@@ -90,6 +92,19 @@ function Workspace() {
                                 <p>Créer un tableau</p>
                             </div>
                        </div>
+                       <div className='create-tableau'>
+                           <div style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
+                                <h4 style={{display: "flex", flex: 1}}>Créer un tableau</h4>
+                                <img src={cross} style={{height: 17, width: 17}}/>
+                           </div>
+
+                           <img src={workspaceScreenshot} style={{height: 120, width: 210}}/>
+
+                           <div>
+                            <h4>Titre du tableau</h4>
+                            <input></input>
+                           </div>
+                        </div>
                     </div>
                 </div>
                 
