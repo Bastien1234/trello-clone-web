@@ -188,12 +188,33 @@ input {
 
 .create-tableau {
     background-color: "white";
-    width: 360px;
+    width: 260px;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 20px;
     margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px black;
+    border-radius: 1px;
+    // box-shadow: 1px 1px 5px black;
+    border: 1px solid rgb(73, 74, 74);
+
+    
+}
+
+.new-tableau-input {
+    background-color: rgb(226, 227, 232);
+    border: 1px solid rgb(200, 198, 234);
+}
+
+.new-tableau-text {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.new-tableau-textholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
